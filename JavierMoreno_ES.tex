@@ -1,0 +1,160 @@
+%
+% Curriculum Vitae LaTeX - Javier Moreno Vega
+%
+% Copyright (c) 2015, Javier Moreno Vega 
+%
+% This program is free software: you can redistribute it and/or modify
+% it under the terms of the GNU General Public License as published by
+% the Free Software Foundation, either version 3 of the License, or
+% (at your option) any later version.
+%
+% This program is distributed in the hope that it will be useful,
+% but WITHOUT ANY WARRANTY; without even the implied warranty of
+% MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+% GNU General Public License for more details.
+%
+% You should have received a copy of the GNU General Public License
+% along with this program.  If not, see .
+%
+
+\documentclass	[10pt,a4paper,oneside]{article}
+\usepackage	[utf8x]{inputenc}
+\usepackage	[activeacute,spanish]{babel}
+\usepackage	{amsmath}
+\usepackage	{amssymb}
+\usepackage	{graphicx}
+\usepackage	{color}
+\usepackage	{textpos}
+\usepackage	[T1]{fontenc}
+
+%\usepackage	{dejavu}	%DejaVuSerif-TLF, DejaVuSans-TLF
+%\usepackage	{palatino}	%ppl
+%\usepackage    {charter}
+%\usepackage	{chancery}
+%\usepackage	{helvet}	%phv
+%\usepackage	{avant}		%pag
+\usepackage[pdftex,
+            pdfauthor={Javier Moreno Vega },
+            pdftitle={Curriculum Vitae - Javier Moreno Vega},
+            pdfsubject={Curriculum Vitae - Javier Moreno Vega},
+            pdfkeywords={Curriculum Vitae, Javier Moreno Vega},
+            pdfproducer={LaTeX},
+            pdfcreator={pdflatex}]{hyperref}
+
+\pagestyle{empty}
+\setlength{\oddsidemargin}{0mm}
+\setlength{\textwidth}{16cm}		% Anchura del texto
+\setlength{\textheight}{24cm}		% Altura del texto
+\setlength{\topmargin}{-1cm}
+\setlength{\headsep}{1cm}
+\setlength{\parskip}{0mm}		% Separación entre párrafos
+\setlength{\parindent}{0mm}		% Tamaño del sangrado
+\setlength{\tabcolsep}{0mm}		% Tamaño cellpadding
+\definecolor{gris}{gray}{0.8}
+\definecolor{azul}{rgb}{0.0,0.0,1.0}
+\newcommand{\seccion}[1]{\vspace*{3mm}\section*{#1}\vspace*{-3mm}}
+\renewcommand{\baselinestretch}{1.1}	% Interlineado.
+\renewcommand{\Huge}{\fontfamily{DejaVuSerif-TLF}\fontsize{25}{25}\selectfont}		% Título
+\renewcommand{\Large}{\fontfamily{pag}\fontseries{b}\fontsize{13}{10}\selectfont}	% Sección
+\renewcommand{\normalsize}{\fontfamily{DejaVuSans-TLF}\fontsize{9}{12}\selectfont}	% Normal
+
+\usepackage{datetime}
+\newdateformat{bkdate}{\THEDAY \ de  \shortmonthname \ de \THEYEAR.}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%% DOCUMENTO %%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%% PORTADA %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\vspace*{-9.7mm}
+\hspace*{-2mm}
+\begin{minipage}{14cm}
+\color{black}
+\Huge\textbf{Javier Moreno Vega}
+\end{minipage}
+
+\begin{textblock*}{1cm}(12.4cm,-2.1cm)
+\includegraphics[scale=0.23]{Foto.jpg}
+\end{textblock*}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%% Datos Personales %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\seccion{Datos Personales:}
+\vspace*{1mm}
+\begin{tabular}{p{50mm}l}
+%NIF: & 76654861R\\
+Fecha de Nacimiento: & 07 de Junio de 1992\\
+Domicilio Actual: & C/ Pedro Antonio de Alarcón 11, 2º - 18005 Granada (Andalucía)\\
+Teléfono de Contacto: & +34 636 425 636\\
+Correo Electrónico: & \color{azul}jmorenov28@gmail.com\color{black}\\
+ & \color{azul}jmorenov@correo.ugr.es\color{black}\\
+Fecha: & \bkdate\today\\
+Web personal: & \url{http://javiermorenovega.com}\\
+Github: & \url{https://github.com/jmorenov}\\
+LinkedIn: & \url{https://www.linkedin.com/in/jmorenov}\\
+AlumniGS: & \url{http://alumnigs.com/pub/javier-moreno-vega/71637}\\
+\end{tabular}
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%% Formación Académica %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\seccion{Formación Acad\'emica:}
+\textbf{Título de Bachilerato} por C.H de Bachillerato "La Inmaculada (Maristas)" Granada (Junio 2010).\\
+\textbf{Graduado en Ingenier\'ia Inform\'atica} por la Universidad de Granada;
+especialidad en \textbf{Computación y Sistemas Inteligentes} (Septiembre 2010 - Junio 2017).\\
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%% Idiomas %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\seccion{Idiomas:}
+\textbf{Español:} Nativo.\\
+\textbf{Inglés:} Título B1 por la Universidad de Cambridge (Preparando examen B2). Nivel alto en lectura, nivel medio hablado y escrito.\\
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%% Experiencia Laboral %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\seccion{Experiencia Laboral:}
+
+Puesto: \textbf{Software Engineer.}\\
+Empresa: \textbf{UNIT4. (Febrero 2017 – ).}\\
+Función: \textbf{Desarrollo de aplicaciones móviles de software de gestión empresarial.}\\
+
+Puesto: \textbf{Junio Software Engineer.}\\
+Empresa: \textbf{UNIT4. (Febrero 2016 – Febrero 2017).}\\
+Función: \textbf{Desarrollo de aplicaciones móviles de software de gestión empresarial.}\\
+
+Puesto: \textbf{Investigador.}\\
+Empresa: \textbf{Universidad de Granada. (Abril 2015 – Septiembre 2015).}\\
+Función: \textbf{Investigación sobre las series temporales. Desarrollar una serie de algoritmos para conseguir una clasificación o taxonomía de series temporales y poder saber que tipo de serie temporal es y darle una etiqueta solamente analizando sus propiedades.}\\
+
+Puesto: \textbf{Becario en prácticas extracurriculares de la Universidad de Granada.}\\
+Empresa: \textbf{Jefatura del MADOC - Mando de Adiestramiento y Doctrina. Sección de Sistemas de Información. (Julio 2014 – Enero 2015).}\\
+Proyectos:\\
+\hspace*{1cm}\textbf{· Servidor Joomla (Julio 2014 – Octubre 2014):}\par
+{\addtolength{\leftskip}{2cm}Instalación, configuraci\'on y desarrollo de diversos complementos y modulos con la intención de tener varios foros y una mejor gestión de los usuarios.\par}
+\hspace*{2cm}PHP, HTML, javascript, jquery, SQL, PHPMyAdmin.\\
+\hspace*{1cm}\textbf{· Aplicación C\# (Noviembre 2014 – Enero 2015):}\par
+{\addtolength{\leftskip}{2cm}
+Desarrollo de una aplicación web y de escritorio en C\# para realizar análisis léxico, sintáctico y semántico de archivos de código fuente C\#.\par}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%% Conocimientos de Informática %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\seccion{Conocimientos de Informática:}
+\textbf{Experto en entornos LINUX, Windows, Ofimática e Internet.}\\
+\textbf{Administración de Sistemas:} Debian GNU/LiNUX, UNIX, Windows y Apache.\\
+\textbf{Lenguajes de Programación:} Amplios conocimientos de Shell Script, Java, Php, C,
+C++, C\#, Javascript, AngularJS, ExtJS, Jquery, CSS, R. Nociones de Sql, Python y Ensamblador.\\
+\textbf{Desarrollo:} Android, Joomla, Indexhibit.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%% Otros datos de interés %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\seccion{Otros Datos de Interés:}
+Carnet de conducir B; vehículo propio.\\
+
+
+\end{document}

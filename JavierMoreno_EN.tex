@@ -1,0 +1,154 @@
+%
+% Curriculum Vitae LaTeX - Javier Moreno Vega
+%
+% Copyright (c) 2015, Javier Moreno Vega 
+%
+% This program is free software: you can redistribute it and/or modify
+% it under the terms of the GNU General Public License as published by
+% the Free Software Foundation, either version 3 of the License, or
+% (at your option) any later version.
+%
+% This program is distributed in the hope that it will be useful,
+% but WITHOUT ANY WARRANTY; without even the implied warranty of
+% MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+% GNU General Public License for more details.
+%
+% You should have received a copy of the GNU General Public License
+% along with this program.  If not, see .
+%
+
+\documentclass	[10pt,a4paper,oneside]{article}
+\usepackage	[utf8x]{inputenc}
+\usepackage	[activeacute,spanish]{babel}
+\usepackage	{amsmath}
+\usepackage	{amssymb}
+\usepackage	{graphicx}
+\usepackage	{color}
+\usepackage	{textpos}
+\usepackage	[T1]{fontenc}
+
+%\usepackage	{dejavu}	%DejaVuSerif-TLF, DejaVuSans-TLF
+%\usepackage	{palatino}	%ppl
+%\usepackage    {charter}
+%\usepackage	{chancery}
+%\usepackage	{helvet}	%phv
+%\usepackage	{avant}		%pag
+\usepackage[pdftex,
+            pdfauthor={Javier Moreno Vega },
+            pdftitle={Curriculum Vitae - Javier Moreno Vega},
+            pdfsubject={Curriculum Vitae - Javier Moreno Vega},
+            pdfkeywords={Curriculum Vitae, Javier Moreno Vega},
+            pdfproducer={LaTeX},
+            pdfcreator={pdflatex}]{hyperref}
+
+\pagestyle{empty}
+\setlength{\oddsidemargin}{0mm}
+\setlength{\textwidth}{16cm}		% Anchura del texto
+\setlength{\textheight}{24cm}		% Altura del texto
+\setlength{\topmargin}{-1cm}
+\setlength{\headsep}{1cm}
+\setlength{\parskip}{0mm}		% Separación entre párrafos
+\setlength{\parindent}{0mm}		% Tamaño del sangrado
+\setlength{\tabcolsep}{0mm}		% Tamaño cellpadding
+\definecolor{gris}{gray}{0.8}
+\definecolor{azul}{rgb}{0.0,0.0,1.0}
+\newcommand{\seccion}[1]{\vspace*{3mm}\section*{#1}\vspace*{-3mm}}
+\renewcommand{\baselinestretch}{1.1}	% Interlineado.
+\renewcommand{\Huge}{\fontfamily{DejaVuSerif-TLF}\fontsize{25}{25}\selectfont}		% Título
+\renewcommand{\Large}{\fontfamily{pag}\fontseries{b}\fontsize{13}{10}\selectfont}	% Sección
+\renewcommand{\normalsize}{\fontfamily{DejaVuSans-TLF}\fontsize{9}{12}\selectfont}	% Normal
+
+\usepackage{datetime}
+\newdateformat{bkdate}{\THEDAY \ de  \shortmonthname \ de \THEYEAR.}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%% DOCUMENTO %%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%% PORTADA %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\vspace*{-9.7mm}
+\hspace*{-2mm}
+\begin{minipage}{14cm}
+\color{black}
+\Huge\textbf{Javier Moreno Vega}
+\end{minipage}
+
+\begin{textblock*}{1cm}(12.4cm,-2.1cm)
+\includegraphics[scale=0.23]{Foto.jpg}
+\end{textblock*}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%% Datos Personales %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\seccion{Information:}
+\vspace*{1mm}
+\begin{tabular}{p{50mm}l}
+%NIF: & 76654861R\\
+Date of birth: & 07 of June of 1992\\
+Street address: & C/ Pedro Antonio de Alarcón 11, 2º - 18005 Granada (Andalucía)\\
+Phone: & +34 636 425 636\\
+E-mail: & \color{azul}jmorenov28@gmail.com\color{black}\\
+ & \color{azul}jmorenov@correo.ugr.es\color{black}\\
+Date: & \bkdate\today\\
+Personal Web: & \url{http://javiermorenovega.com}\\
+Github: & \url{https://github.com/jmorenov}\\
+LinkedIn: & \url{https://www.linkedin.com/in/jmorenov}\\
+AlumniGS: & \url{http://alumnigs.com/pub/javier-moreno-vega/71637}\\
+\end{tabular}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%% Formación Académica %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\seccion{Formation:}
+\textbf{School graduate} by "La Inmaculada (Maristas)" Granada (June 2010).\\
+\textbf{Bachelor of Science Degree in Computer Engineering} , with a \textbf{Major in Artificial Intelligence} by the University of Granada (September 2010 - Junio 2017).\\
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%% Idiomas %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\seccion{Languages:}
+\textbf{Spanish:} Native.\\
+\textbf{Inglés:} B1 Cambridge (PET) title.\\
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%% Experiencia Laboral %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\seccion{Professional Experiences:}
+
+Job: \textbf{Software Engineer.}\\
+Company: \textbf{UNIT4. (February 2017 – ).}\\
+Work: \textbf{Development of Mobile Applications of software about of ERP.}\\
+
+Job: \textbf{Junio Software Engineer.}\\
+Company: \textbf{UNIT4. (February 2016 – February 2017).}\\
+Work: \textbf{Development of Mobile Applications of software about of ERP.}\\
+
+Job: \textbf{Researcher.}\\
+Company: \textbf{University of Granada. (April 2015 – September 2015).}\\
+Work: \textbf{Research on time series. Develop a series of algorithms to achieve a classification or taxonomy of time series and to know what kind of time series is and give it a label only analyzing their properties.}\\
+
+Job: \textbf{Intern.}\\
+Company: \textbf{MADOC - Mando de Adiestramiento y Doctrina. Army Software department. (July 2014 – January 2015).}\\
+Projects:\\
+\hspace*{1cm}\textbf{· Joomla Server (July 2014 – October 2014):}\par
+{\addtolength{\leftskip}{2cm}Installation, configuration and development of complements and modules with the intention of having several forums and better management of users.\par}
+\hspace*{2cm}PHP, HTML, javascript, jquery, SQL, PHPMyAdmin.\\
+\hspace*{1cm}\textbf{· C\# App (Noviembre 2014 – January 2015):}\par
+{\addtolength{\leftskip}{2cm}
+Development of a Web and Desktop app in C\# for lexical, syntactic and semantic analysis of source files C\#.\\\\\\\\\par}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%% Conocimientos de Informática %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\seccion{Softwares:}
+\textbf{Expert environments LINUX, Windows, Office and Internet.}\\
+\textbf{Systems Management:} Debian GNU/LiNUX, UNIX, Windows and Apache.\\
+\textbf{Programming languages:} Advanced level: Shell Script, Java, Php, C,
+C++, C\#, Javascript, Jquery, CSS, R. Medium level of Sql, Python and Ensamblador.\\
+\textbf{Development:} Android, Joomla, Indexhibit, Bootstrap.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%% Otros datos de interés %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\seccion{Other skills:}
+Driving license; own car.\\
+
+
+\end{document}
